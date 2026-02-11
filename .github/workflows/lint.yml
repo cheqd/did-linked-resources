@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Run 'set -euox pipefail' check
         run: bash ./.github/scripts/ensure_set_euox_pipefail.sh
@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Run Markdown link check
         uses: gaurav-nelson/github-action-markdown-link-check@v1
@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0 # Required to fetch version
     
@@ -71,7 +71,7 @@ jobs:
   #   runs-on: ubuntu-latest
     
   #   steps:
-  #     - uses: actions/checkout@v4
+  #     - uses: actions/checkout@v6
 
   #     - uses: actions/setup-go@v3
   #       with:
@@ -87,7 +87,7 @@ jobs:
   #   name: Linter for Terraform
   #   runs-on: ubuntu-latest
   #   steps:
-  #     - uses: actions/checkout@v4
+  #     - uses: actions/checkout@v6
 
   #     - name: TFSec Analysis
   #       uses: aquasecurity/tfsec-pr-commenter-action@v1.0.5
